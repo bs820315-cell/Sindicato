@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Sindicato CECyTE-EMSaD Tlaxcala</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/img/logo-sindicato.png" alt="Logo Sindicato">
+        <div class="logo-texto">
+            <h2>SINDICATO CECyTE–EMSaD</h2>
+            <p>ESTADO DE TLAXCALA</p>
+        </div>
+    </div>
+    <div class="header-acciones">
+        <button id="btnTema" class="btn-tema" title="Cambiar modo">🌙</button>
+        <button class="menu-boton" id="menuBoton">☰</button>
+    </div>
+    <nav id="navMenu">
+        <a href="/paginas/inicio.html">Inicio</a>
+        <a href="/paginas/conocenos.html">Conocenos</a>
+        <a href="/paginas/inicio.html#anuncios">Anuncios</a>
+        <a href="/paginas/inicio.html#galeria">Galería</a>
+        <a href="/paginas/contactanos.html">Contacto</a>
+        <a href="/paginas/historia.html"></a>
+    </nav>
+</header>
+
+<a href="/index.html" class="btn-volver"><span class="flecha">←</span>Portada</a>
+
+<main class="contenedor-contacto">
+    <div class="titulo-seccion">
+        <span>CONTÁCTANOS</span>
+        <h2>Estamos para escucharte</h2>
+        <p>Déjanos tu mensaje y un representante del sindicato te contactará.</p>
+    </div>
+
+    <div class="caja-contacto solo-formulario">
+        <!-- FORMULARIO CENTRADO A TODO LO ANCHO - WHATSAPP Y GMAIL -->
+        <form id="formQueja" class="formulario">
+            <label>Nombre completo:</label>
+            <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
+
+            <label>Correo electrónico:</label>
+            <input type="email" id="correo" placeholder="Ej: juan@gmail.com" required>
+
+            <label>Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Ej: 241 123 4567">
+
+            <label>¿Qué es?</label>
+            <select id="tipo" required>
+                <option value="">Elige una opción</option>
+                <option value="Queja">Queja</option>
+                <option value="Sugerencia">Sugerencia</option>
+                <option value="Duda">Duda / Propuesta</option>
+            </select>
+
+            <label>Mensaje:</label>
+            <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+            <div class="botones-envio">
+              <button type="button" class="btn-enviar whatsapp" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+              <button type="button" class="btn-enviar gmail" onclick="enviarGmail()">Enviar a Gmail</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- 3 CUADRITOS ABAJO -->
+    <div class="tarjetas-contacto">
+        <a href="https://wa.me/522464648198" target="_blank" class="tarjeta-contacto">
+            <div class="icono-tarjeta verde">✆</div>
+            <h3>WhatsApp</h3>
+            <p>246 464 8198</p>
+            <span>Escríbenos ahora →</span>
+        </a>
+
+        <a href="https://www.facebook.com/sindicatocecytetlax" target="_blank" class="tarjeta-contacto">
+            <div class="icono-tarjeta azul">f</div>
+            <h3>Facebook</h3>
+            <p>Sindicato CECyTE Tlaxcala</p>
+            <span>Visitar página →</span>
+        </a>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Sindicato+CECyTE+EMSAD+Tlaxcala+Av.+Durango+120+Chiautempan" target="_blank" class="tarjeta-contacto">
+            <div class="icono-tarjeta gris">📍</div>
+            <h3>Ubicación</h3>
+            <p>Av. Durango 120, Chiautempan, Tlax.</p>
+            <span>Cómo llegar →</span>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-contenido">
+        <div class="footer-col centro">
+            <h3>SÍGUENOS</h3>
+            <div class="redes">
+                <a href="https://www.facebook.com/sindicatocecytetlax" target="_blank" class="red facebook">f</a>
+                <a href="https://wa.me/522464648198" target="_blank" class="red whatsapp">✆</a>
+            </div>
+            <p>Lun - Vie • 9:00 AM - 8:00 PM</p>
+            <p>📍 Av. Durango 120, Chiautempan, Tlax.</p>
+            <p>📞 246 464 8198</p>
+        </div>
+
+        <div class="footer-col derecha">
+            <h3>ENCUÉNTRANOS</h3>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps?q=Sindicato%20CECyTE%20EMSAD%20Tlaxcala%20Av.%20Durango%20120%20Chiautempan&output=embed" loading="lazy"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Sindicato+CECyTE+EMSAD+Tlaxcala+Av.+Durango+120+Chiautempan" target="_blank" class="btn-llegar">Cómo llegar →</a>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>© <span id="anio"></span> SINDICATO CECyTE - EMSAD TLAXCALA</p>
+    </div>
+</footer>
+
+<script src="/js/contacto.js"></script>
+
+</body>
+</html>
